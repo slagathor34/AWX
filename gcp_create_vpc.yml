@@ -4,6 +4,8 @@
   vars:
      gcp_project: o365-cloud-security
      gcp_cred_kind: serviceaccount
+  roles:
+    - role: '/var/www/miq/vmdb/content/ansible_consolidated/roles/google.cloud'
   tasks:
     - name: create a  VPC network
       gcp_compute_network:
