@@ -1,7 +1,8 @@
 ---
-- src: google.cloud
-  name: Create a GCP instance
+- name: Create a GCP instance
   hosts: localhost
+  roles:
+    - google.cloud
   vars:
      gcp_project: o365-cloud-security
      gcp_cred_kind: serviceaccount
