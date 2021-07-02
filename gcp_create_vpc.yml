@@ -1,11 +1,10 @@
 ---
+- src: google.cloud
 - name: Create a GCP instance
   hosts: localhost
   vars:
      gcp_project: o365-cloud-security
      gcp_cred_kind: serviceaccount
-  roles:
-    - google.cloud
   tasks:
     - name: create a  VPC network
       gcp_compute_network:
